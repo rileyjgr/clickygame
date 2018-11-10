@@ -1,0 +1,40 @@
+{
+  "name": "clickygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/sever/server.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "start": "concurrently \"nodemon src/server/server.js\" \"webpack -d --watch\"",
+    "build": "webpack -p",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon src/server/server.js",
+    "postinstall": "webpack",
+    "heroku-postbuild": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-react-transform": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "lowdb": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.25.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
